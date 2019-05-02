@@ -161,3 +161,5 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 set runtimepath^=~/.vim/after/ftplugin/markdown/instant-markdown.vim
+execute pathogen#infect()
+call pathogen#helptags()
