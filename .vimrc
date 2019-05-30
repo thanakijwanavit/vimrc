@@ -119,7 +119,7 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 " nerdtree settings
 let NERDTreeShowHidden=1
-let NERDTreeMapOpenInTab='<ENTER>'
+" let NERDTreeMapOpenInTab='<ENTER>'
 " move between windows
 nnoremap <C-J> <C-W>j
 nnoremap <C-K> <C-W>k
