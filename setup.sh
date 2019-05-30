@@ -2,5 +2,5 @@
 
 mv ~/.vim ~/.vim.backup
 mv ~/.vimrc ~/.vimrc.backup
-ln -s .vim ~/.vim
-ln .vimrc ~/.vimrc
+ln -s $PWD/.vim ~/.vim
+ln -s $PWD/.vimrc ~/.vimrc
