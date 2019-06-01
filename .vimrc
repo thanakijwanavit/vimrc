@@ -9,6 +9,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()            " required
 filetype plugin indent on    " required
 filetype plugin on
@@ -108,8 +110,6 @@ if has("autocmd")
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 
 set runtimepath^=~/.vim/after/ftplugin/markdown/instant-markdown.vim
 execute pathogen#infect()
@@ -140,3 +140,8 @@ endif
 let g:lightline = {
       \ 'colorscheme': 'jellybeans',
       \ }
+" Enable folding
+set foldmethod=indent
+set foldlevel=99
+" Enable folding with the spacebar
+nnoremap <space> za
