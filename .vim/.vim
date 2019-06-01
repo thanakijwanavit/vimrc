@@ -1,0 +1,1 @@
+/Users/thanakijwanavit/vimrc/.vim
