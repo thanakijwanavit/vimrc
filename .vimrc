@@ -127,6 +127,7 @@ nnoremap <C-L> <C-W>l
 nnoremap <C-H> <C-W>h
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>s :w<CR>
+nnoremap <Leader>w :w<CR>
 " markdown
 let g:instant_markdown_autostart = 1 "set autostart
 Plug '/usr/local/opt/fzf'
