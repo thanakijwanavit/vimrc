@@ -7,7 +7,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'w0rp/ale'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'suan/vim-instant-markdown', {'rtp': 'after'}
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -57,6 +56,7 @@ syntax on
 set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
+set shiftwidth=2
 " Show “invisible” characters
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
@@ -145,3 +145,6 @@ set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
+" add tab shortcut in case supertab is enabled
+imap <leader><tab> <tab>
+imap <c-tab> <tab>
