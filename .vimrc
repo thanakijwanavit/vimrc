@@ -145,3 +145,5 @@ set foldmethod=indent
 set foldlevel=99
 " Enable folding with the spacebar
 nnoremap <space> za
+" set clipboardboard to use the system default one
+set clipboard=unnamed
